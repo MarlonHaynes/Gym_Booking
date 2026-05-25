@@ -183,7 +183,10 @@ export default function Navbar() {
             Sign Out
           </button>
         ) : (
-          <Link to="/booking" className={styles.mobileCta} onClick={closeMenu}>Book a Class</Link>
+          <div style={{ display: 'flex', gap: 'var(--space-4)', flexDirection: 'column', alignItems: 'center' }}>
+            <Link to="/login" className={styles.mobileCta} style={{ background: 'transparent', color: 'var(--color-text-secondary)', border: '1px solid var(--color-base-border)' }} onClick={closeMenu}>Sign In</Link>
+            <Link to="/booking" className={styles.mobileCta} onClick={closeMenu}>Book a Class</Link>
+          </div>
         )}
       </div>
     </>

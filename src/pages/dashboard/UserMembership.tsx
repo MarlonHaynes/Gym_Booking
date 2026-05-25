@@ -47,7 +47,7 @@ export default function UserMembership() {
       <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--color-text-muted)', marginBottom: 'var(--space-6)' }}>
         {currentTier ? 'Upgrade Options' : 'Choose a Plan'}
       </p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 'var(--space-5)' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 'var(--space-5)' }}>
         {memberships.map(m => {
           const isCurrent = m.name === user?.membershipTier
           return (
