@@ -89,11 +89,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className={styles.heroScrollIndicator}>
-          <span className={styles.heroScrollText}>Scroll</span>
-          <div className={styles.heroScrollLine} />
-        </div>
       </section>
 
       {/* ─── Features ─── */}

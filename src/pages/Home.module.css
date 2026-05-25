@@ -155,9 +155,10 @@
 .heroStatLabel {
   font-family: var(--font-mono);
   font-size: 10px;
+  font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
+  color: var(--color-accent-light);
   margin-top: var(--space-1);
 }
 
@@ -501,6 +502,10 @@
 }
 
 @media (max-width: 768px) {
+  .heroContent {
+    padding-top: var(--space-8);
+  }
+
   .heroStats {
     gap: var(--space-6);
   }

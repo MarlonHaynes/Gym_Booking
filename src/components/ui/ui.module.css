@@ -439,6 +439,20 @@
 }
 
 @media (max-width: 768px) {
+  .sectionHeaderCenter {
+    text-align: center;
+  }
+
+  .sectionHeaderCenter .eyebrow {
+    display: block;
+    margin-bottom: var(--space-3);
+  }
+
+  .sectionHeaderCenter .sectionSubtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .trainerCard {
     grid-template-columns: 1fr;
   }
