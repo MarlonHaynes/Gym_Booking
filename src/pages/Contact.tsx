@@ -67,7 +67,7 @@ export default function Contact() {
           <SectionHeader
             eyebrow="Get in Touch"
             title="We'd love to hear from you"
-            subtitle="Whether you're ready to join, have a question, or just want to see the space — we're here."
+            subtitle="Whether you're ready to join, have a question, or just want to see the space we're here."
           />
         </div>
       </div>

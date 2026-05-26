@@ -141,8 +141,6 @@
   animation: fadeUp 0.7s 0.65s both;
 }
 
-.heroStat {}
-
 .heroStatNum {
   font-family: var(--font-display);
   font-size: 36px;

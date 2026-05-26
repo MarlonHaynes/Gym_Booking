@@ -33,7 +33,7 @@ export default function UserProfile() {
     { key: 'email', label: 'Email notifications', desc: 'Booking confirmations and receipts' },
     { key: 'sms', label: 'SMS notifications', desc: 'Text reminders for upcoming classes' },
     { key: 'reminders', label: 'Class reminders', desc: '2 hours before each class' },
-    { key: 'promotions', label: 'Promotions & events', desc: 'Member-only offers and announcements' },
+    { key: 'promotions', label: 'Promotions & events', desc: 'Member only offers and announcements' },
   ]
 
   return (

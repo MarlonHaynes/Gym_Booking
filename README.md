@@ -1,4 +1,4 @@
-# NOIR GYM — Luxury Fitness Web Application
+# NOIR GYMLuxury Fitness Web Application
 
 A production-ready gym booking web application built with React + TypeScript + Vite.
 

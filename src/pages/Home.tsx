@@ -24,7 +24,7 @@ const features = [
   {
     icon: <Zap size={22} />,
     title: 'Science-Backed Programming',
-    desc: 'Every class is periodized and purposeful. No filler, no trends. Just evidence-based methodology and measurable results.',
+    desc: 'Every class is periodized and purposeful. No filler, no trends. Just evidence based methodology and measurable results.',
   },
   {
     icon: <Star size={22} />,
@@ -63,7 +63,7 @@ export default function Home() {
               <span className={styles.heroTitleItalic}>Refined.</span>
             </h1>
             <p className={styles.heroSubtitle}>
-              Where aesthetic commitment meets athletic rigor. NOIR is more than a gym — it is a practice, a philosophy, and a community built around becoming more.
+              Where aesthetic commitment meets athletic rigor. NOIR is more than a gym, it is a practice, a philosophy, and a community built around becoming more.
             </p>
             <div className={styles.heroCtas}>
               <Link to="/booking" className={styles.ctaPrimary}>

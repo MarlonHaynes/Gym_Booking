@@ -33,7 +33,7 @@ export default function AdminOverview() {
 
   return (
     <DashboardLayout eyebrow="Admin" title="Control Panel" navItems={navItems}>
-      <DashPageHeader eyebrow="Admin Panel" title="Overview" subtitle="NOIR GYM — business at a glance." />
+      <DashPageHeader eyebrow="Admin Panel" title="Overview" subtitle="NOIR GYM business at a glance." />
       <div className={s.statsGrid}>
         <StatCard label="Active Members" value={activeMembers} trend="+3 this month" trendUp loading={loading} />
         <StatCard label="Bookings This Month" value={bookingsThisMonth.length} trend={`vs ${bookingsLastMonth.length} last month`} trendUp={bookingsThisMonth.length >= bookingsLastMonth.length} loading={loading} />

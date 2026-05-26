@@ -34,7 +34,7 @@ export default function Trainers() {
                 "Great coaching is <em>not about motivation.</em> It's about making the right thing feel inevitable."
               </p>
               <p className={styles.philosophyBody}>
-                Every trainer at NOIR is selected not just for their certifications — though those are impeccable — but for their ability to see people clearly and challenge them precisely. The difference between a good session and a transformative one is the person leading it.
+                Every trainer at NOIR is selected not just for their certifications though those are impeccable but for their ability to see people clearly and challenge them precisely. The difference between a good session and a transformative one is the person leading it.
               </p>
             </div>
             <div className={styles.philosophyImage}>
