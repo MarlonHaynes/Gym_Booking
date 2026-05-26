@@ -272,9 +272,66 @@
 .modalBtnDanger:hover { background: #d4897d; }
 
 /* ─── Revenue Chart ─── */
+.revenueChartCard {
+  background: var(--color-base-elevated);
+  border: 1px solid var(--color-base-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.revenueChartHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-5);
+}
+
+.revenueChartTitle {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.revenueChartSubtitle {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  opacity: 0.75;
+  margin: 0;
+}
+
+.revenueChartBody {
+  display: flex;
+  align-items: stretch;
+  gap: var(--space-3);
+}
+
+.revenueChartAxis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding: var(--space-4) 0 var(--space-6);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--color-text-muted);
+  min-width: 2.5rem;
+  text-align: right;
+}
+
 .revenueChart {
+  flex: 1;
+  min-width: 0;
   height: 180px;
   padding: var(--space-4) 0 var(--space-2);
+  border-left: 1px solid var(--color-base-border);
+  padding-left: var(--space-3);
 }
 
 .revenueChartBars {

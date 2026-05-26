@@ -137,22 +137,48 @@ export function ConfirmModal({
 }
 
 // ─── Revenue Chart ────────────────────────────────────────────────────────────
+function formatChartMonth(month: string, year: number) {
+  return `${month} '${String(year).slice(-2)}`
+}
+
 export function RevenueChart() {
-  const max = Math.max(...monthlyRevenue.map(m => m.revenue))
+  const data = monthlyRevenue.slice(-12)
+  const max = Math.max(...data.map(m => m.revenue))
+  const lastIndex = data.length - 1
+
   return (
-    <div className={styles.chartWrap}>
-      <p className={styles.chartTitle}>Monthly Revenue</p>
-      <div className={styles.chartBars}>
-        {monthlyRevenue.map((m, i) => (
-          <div key={i} className={styles.chartBarWrap}>
-            <div
-              className={styles.chartBar}
-              style={{ height: `${(m.revenue / max) * 100}%` }}
-              title={`$${m.revenue.toLocaleString()}`}
-            />
-            <span className={styles.chartBarLabel}>{m.month}</span>
+    <div className={styles.revenueChartCard}>
+      <div className={styles.revenueChartHeader}>
+        <p className={styles.revenueChartTitle}>Monthly Revenue</p>
+        <p className={styles.revenueChartSubtitle}>Last 12 months · hover bars for totals</p>
+      </div>
+      <div className={styles.revenueChartBody}>
+        <div className={styles.revenueChartAxis} aria-hidden>
+          <span>${Math.round(max / 1000)}k</span>
+          <span>${Math.round(max / 2000)}k</span>
+          <span>$0</span>
+        </div>
+        <div className={styles.revenueChart}>
+          <div className={styles.revenueChartBars}>
+            {data.map((m, i) => (
+              <div key={`${m.month}-${m.year}`} className={styles.revenueBarWrap}>
+                <span className={styles.revenueBarTooltip}>
+                  ${m.revenue.toLocaleString()}
+                </span>
+                <div
+                  className={cn(
+                    styles.revenueBar,
+                    i === lastIndex && styles.revenueBarHighlight,
+                  )}
+                  style={{ height: `${(m.revenue / max) * 100}%` }}
+                />
+                <span className={styles.revenueBarLabel}>
+                  {formatChartMonth(m.month, m.year)}
+                </span>
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   )
