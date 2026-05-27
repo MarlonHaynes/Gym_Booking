@@ -30,6 +30,17 @@
 
 ---
 
+## Live Demo
+
+| Role | Email | Password | Where to go |
+|---|---|---|---|
+| **Member** | `member@noirgym.com` | `member123` | [Dashboard](https://noir-gym-platform.vercel.app/dashboard) |
+| **Admin** | `admin@noirgym.com` | `admin123` | [Admin overview](https://noir-gym-platform.vercel.app/admin) |
+
+Use **Sign In** on the site, or the quick-fill hints on the login page. No backend required — sessions run on client-side mock auth.
+
+---
+
 ## Why NOIR GYM?
 
 Most gym sites stop at marketing pages. **NOIR GYM** is a complete product surface: public discovery, multi-step booking, member portal, checkout, and an admin control panel — all with a cohesive luxury dark UI, role-based routing, and realistic mock data.
@@ -42,17 +53,6 @@ Most gym sites stop at marketing pages. **NOIR GYM** is a complete product surfa
 | Admin panel (members, bookings, revenue) | ✅ | ❌ |
 | Auth + protected routes (user / admin) | ✅ | ❌ |
 | Responsive mobile layout | ✅ | ⚠️ |
-
----
-
-## Live demo
-
-| Role | Email | Password | Where to go |
-|---|---|---|---|
-| **Member** | `member@noirgym.com` | `member123` | [Dashboard](https://noir-gym-platform.vercel.app/dashboard) |
-| **Admin** | `admin@noirgym.com` | `admin123` | [Admin overview](https://noir-gym-platform.vercel.app/admin) |
-
-Use **Sign In** on the site, or the quick-fill hints on the login page. No backend required — sessions run on client-side mock auth.
 
 ---
 
@@ -138,7 +138,7 @@ Use **Sign In** on the site, or the quick-fill hints on the login page. No backe
 
 ---
 
-## Tech stack
+## Tech Stack
 
 | Layer | Choice |
 |---|---|
@@ -153,7 +153,7 @@ Use **Sign In** on the site, or the quick-fill hints on the login page. No backe
 
 ---
 
-## Quick start
+## Quick Start
 
 ```bash
 npm install
@@ -236,7 +236,7 @@ src/
 
 ---
 
-## Design system
+## Design System
 
 | Token | Value | Usage |
 |---|---|---|
@@ -250,10 +250,23 @@ src/
 
 ---
 
+## Contact
+
+Available for full-time and contract opportunities.
+📧 marlon.haynes.dev@gmail.com
+
+---
+
+## License
+
+Personal portfolio project — not licensed for reuse or redistribution.
+
+© 2026 Marlon Haynes. All rights reserved.
+
+---
+
 <div align="center">
 
-Built as a portfolio-grade luxury fitness platform · **NOIR GYM**
-
-[Live demo](https://noir-gym-platform.vercel.app/) · [Admin](https://noir-gym-platform.vercel.app/admin) · [Booking](https://noir-gym-platform.vercel.app/booking)
+Built by Marlon Haynes • Web Alchemist Labs
 
 </div>
